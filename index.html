@@ -1787,10 +1787,11 @@
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
           </div>
           <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="subj" id="subject" placeholder="Subject" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" id="text" name="message" rows="5" placeholder="Message" required></textarea>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"
+              required></textarea>
           </div>
           <div class="my-3">
             <div class="msg">Your message has been sent. Thank you!</div>
@@ -1801,7 +1802,7 @@
         <script>
           document.addEventListener('DOMContentLoaded', function () {
             var form = document.getElementById('myForm');
-            var inputField = document.getElementById('text');
+            var inputField = document.getElementById('message');
             var btn = document.getElementById('btn');
 
             inputField.addEventListener('keydown', function (e) {
@@ -1815,11 +1816,11 @@
 
           function submitForm(form) {
             var name = document.getElementsByName("name")[0].value;
-            var subject = document.getElementsByName("subject")[0].value;
+            var subj = document.getElementsByName("subj")[0].value;
             var message = document.getElementsByName("message")[0].value;
             var msg = document.querySelector(".msg");
 
-            window.open("https://wa.me/6281387299776?text=*From*%20%3A%20" + name + "%0A*Subject*%20%3A%20" + subject + "%0A%0A*Message*%20%3A%20" + message, "_blank");
+            window.open("https://wa.me/6281387299776?text=*From*%20%3A%20" + name + "%0A*Subject*%20%3A%20" + subj + "%0A%0A*Message*%20%3A%20" + message, "_blank");
 
             setTimeout(function () {
               msg.style.display = 'block';
@@ -1861,7 +1862,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 
   <!-- Template Main JS File -->
