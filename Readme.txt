@@ -4,4 +4,4 @@ FIRST CREATED : 29 AUGUST 2023
 LAST MODIFIED : 21 SEPTEMBER 2023
 
 --- LIST OF COMMIT NAMES ---
-1. 21-09-23 _ fixed background image position on mobile views
+1. 21-09-23 _ fixed background image position on mobile views and fix send message system
